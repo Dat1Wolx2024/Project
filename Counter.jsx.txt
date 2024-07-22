@@ -1,0 +1,13 @@
+// Counter.js
+import React from 'react';
+
+function Counter({ count }) {
+  return (
+    <div>
+      <h2>Counter Component</h2>
+      <p>Received Count: {count}</p>
+    </div>
+  );
+}
+
+export default Counter;

@@ -1,0 +1,23 @@
+// App.js
+import React, { useState } from 'react';
+import './App.css';
+import Counter from './Counter';
+
+function App() {
+  const [count, setCount] = useState(0);
+
+  const incrementCount = () => {
+    setCount(count + 1);
+  };
+
+  return (
+    <div className="App">
+      <h1>Debugging React Application</h1>
+      <p>Count: {count}</p>
+      <button onClick={incrementCount}>Increment Count</button>
+      <Counter count={count} />
+    </div>
+  );
+}
+
+export default App;
